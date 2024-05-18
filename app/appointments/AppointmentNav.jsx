@@ -1,17 +1,22 @@
 "use client"
 import React, { useState } from 'react'
-import AppointmentFormModal from './AppointmentFormModal'
+import AppointmentForm from './AppointmentForm'
 
 export default function AppointmentNav() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [showPopup, setShowPopup] = useState(false);
 
-    const openModal = () => setIsModalOpen(true);
-    const closeModal = () => setIsModalOpen(false);
+    const handleOpenPopup = () => {
+        setShowPopup(true);
+    };
+
+    const handleClosePopup = () => {
+        setShowPopup(false);
+    };
     return (
         <div>
             <div className=" pt-3 flex items-end justify-end">
                 <button className=' text-black bg-gray-400 py-2 px-3 rounded-md' onClick={openModal}>Add New Appointments</button>
-                <AppointmentFormModal isOpen={isModalOpen} onClose={closeModal} />
+                <AppointmentForm show={showPopup} onClose={handleClosePopup} />
             </div>
         </div>
     )

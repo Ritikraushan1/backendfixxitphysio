@@ -4,10 +4,16 @@ import { FaPhone } from "react-icons/fa";
 import { IoMdPerson, IoIosMail } from "react-icons/io";
 import { app } from "../firebase"
 import { getDatabase, ref, push } from "firebase/database";
+import styles from "./Appointmentform.module.css"
 
 const db = getDatabase(app);
 
-export default function AppointmentForm({ onChange, onSubmit }) {
+export default function AppointmentForm({ onChange, onSubmit, show, close }) {
+
+    if (!show) {
+        return null;
+    }
+
     const [formData, setFormData] = useState({
         service: '',
         doctor: '',
@@ -98,7 +104,7 @@ export default function AppointmentForm({ onChange, onSubmit }) {
     return (
         <div className=" pt-16 md:pt-12 sm:pt-8">
             <div className="container max-w-4xl items-center">
-                <div className="">
+                <div className={styles.popupContent} onClick={(e) => e.stopPropagation()}>
                     <div className="">
                         <form className="" onSubmit={handleSubmit}>
                             <div className=" bg-slate-100 rounded-lg">
