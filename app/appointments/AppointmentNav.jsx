@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import AppointmentForm from './AppointmentForm'
+import styles from './AppointmentForm.module.css';
 
 export default function AppointmentNav() {
     const [showPopup, setShowPopup] = useState(false);
@@ -15,9 +16,15 @@ export default function AppointmentNav() {
     return (
         <div>
             <div className=" pt-3 flex items-end justify-end">
-                <button className=' text-black bg-gray-400 py-2 px-3 rounded-md' onClick={openModal}>Add New Appointments</button>
-                <AppointmentForm show={showPopup} onClose={handleClosePopup} />
+                <button className=' text-black bg-gray-400 py-2 px-3 rounded-md' onClick={handleOpenPopup}>Add New Appointments</button>
             </div>
+            {showPopup && (
+                <div className={styles.overlay} onClick={handleClosePopup}>
+                    <div className={styles.popupContent} onClick={(e) => e.stopPropagation()}>
+                        <AppointmentForm show={showPopup} close={handleClosePopup} />
+                    </div>
+                </div>
+            )}
         </div>
     )
 }

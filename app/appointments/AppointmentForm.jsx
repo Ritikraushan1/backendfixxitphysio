@@ -8,7 +8,7 @@ import styles from "./Appointmentform.module.css"
 
 const db = getDatabase(app);
 
-export default function AppointmentForm({ onChange, onSubmit, show, close }) {
+export default function AppointmentForm({ show, close }) {
 
     if (!show) {
         return null;
@@ -104,7 +104,7 @@ export default function AppointmentForm({ onChange, onSubmit, show, close }) {
     return (
         <div className=" pt-16 md:pt-12 sm:pt-8">
             <div className="container max-w-4xl items-center">
-                <div className={styles.popupContent} onClick={(e) => e.stopPropagation()}>
+                <div className={styles.popupContent}>
                     <div className="">
                         <form className="" onSubmit={handleSubmit}>
                             <div className=" bg-slate-100 rounded-lg">
