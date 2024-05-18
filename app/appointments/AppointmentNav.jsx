@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import AppointmentForm from './AppointmentForm'
-import styles from './AppointmentForm.module.css';
+import styles from './Appointmentform.module.css';
 
 export default function AppointmentNav() {
     const [showPopup, setShowPopup] = useState(false);

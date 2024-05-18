@@ -64,7 +64,7 @@ export default function AppointmentTable() {
                         <TableCell align="right">Appointment Date</TableCell>
                         <TableCell align="right">Appointment Time</TableCell>
                         <TableCell align="right">Appointment Type</TableCell>
-                        <TableCell align="right">Appointment Mail</TableCell>
+                        <TableCell align="right">Action</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
