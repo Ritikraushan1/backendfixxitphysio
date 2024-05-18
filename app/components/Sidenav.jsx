@@ -63,7 +63,7 @@ function Sidenav(props) {
             </Toolbar>
             <Divider />
             <List>
-                {['Dashboard', 'Appointments', 'Services', 'Contact Query', 'Doctors'].map((text, index) => (
+                {['Dashboard', 'Appointments', 'Services', 'Contacts', 'Doctors'].map((text, index) => (
                     <ListItem key={text} disablePadding className={pathname.startsWith("/" + text.toLowerCase()) ? " text-sky-600" : "text-slate-700"}
                         onClick={() => {
                             router.push("/" + text.toLowerCase())
