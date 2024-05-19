@@ -98,7 +98,6 @@ export default function AppointmentForm({ show, close }) {
             console.error("Error adding appointment to database: ", error);
             alert("An error occurred while processing your appointment. Please try again later.");
         }
-        // Handle form submission here
     };
 
     return (
