@@ -4,6 +4,7 @@ import Sidenav from "../components/Sidenav";
 import { useRouter } from "next/navigation";
 import { getAuth, signOut } from "firebase/auth";
 import { auth } from "../firebase";
+import DoctorHero from "./DoctorHero";
 
 export default function page() {
   const router = useRouter();
@@ -23,5 +24,9 @@ export default function page() {
     return () => unsubscribe();
   }, [router]);
   if (loading) return <div>Loading...</div>;
-  return <Sidenav></Sidenav>;
+  return (
+    <Sidenav>
+      <DoctorHero />
+    </Sidenav>
+  );
 }
