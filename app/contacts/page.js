@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { getAuth, signOut } from "firebase/auth";
 import { auth } from "../firebase";
 import ContactHero from "./ContactHero";
+import ContactTable from "./ContactTables";
 
 export default function page() {
   const router = useRouter();
@@ -27,6 +28,7 @@ export default function page() {
   return (
     <Sidenav>
       <ContactHero />
+      <ContactTable />
     </Sidenav>
   );
 }

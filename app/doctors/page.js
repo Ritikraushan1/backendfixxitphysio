@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import { getAuth, signOut } from "firebase/auth";
 import { auth } from "../firebase";
 import DoctorHero from "./DoctorHero";
+import DoctorsNav from "./DoctorsNav";
+import DoctorsTable from "./DoctorsTable";
 
 export default function page() {
   const router = useRouter();
@@ -27,6 +29,8 @@ export default function page() {
   return (
     <Sidenav>
       <DoctorHero />
+      <DoctorsNav />
+      <DoctorsTable />
     </Sidenav>
   );
 }
