@@ -144,34 +144,34 @@ export default function AppointmentForm({ show, close }) {
                                         <div className=" flex flex-row gap-x-16 items-center">
                                             <select id='service' name='service' value={formData.service} onChange={handleInputChange} className=' text-xl border-solid border-gray-700 border-2 rounded-3xl px-8 py-3 text-gray-500 outline-none' required>
                                                 <option value="">Select Services</option>
-                                                <option value="rehabilitation">Rehabilitation</option>
-                                                <option value="strokeTreatment">Stroke Treatment</option>
-                                                <option value="postureCorrection">Posture Correction</option>
-                                                <option value="workoutTraining">Workout Training</option>
-                                                <option value="frozenShoulder">Frozen Shoulder</option>
-                                                <option value="tennisElbow">Tennis Elbow</option>
-                                                <option value="golferElbow">Golfer Elbow</option>
-                                                <option value="aclRehab">ACL Rehab</option>
-                                                <option value="ankylosingSpondylitis">Ankylosing Spondylitis</option>
-                                                <option value="cupping">Cupping/ Hijama / Therapy</option>
-                                                <option value="arthritis">Arthritis OA/RA</option>
-                                                <option value="dryNeedling">Dry Needling</option>
-                                                <option value="mfrIastm">MFR-IASTM</option>
-                                                <option value="backPain">Back Pain</option>
-                                                <option value="neckPain">Neck Pain</option>
-                                                <option value="kneePain">Knee Pain</option>
-                                                <option value="heelPain">Heel Pain</option>
-                                                <option value="accuPressure">Accupressure</option>
-                                                <option value="bells">Bell's / Facial Palsy</option>
-                                                <option value="sciaticaTreatment">Sciatica Treatment</option>
-                                                <option value="paralysis">Paralysis Treatment</option>
-                                                <option value="another">Any Other</option>
+                                                <option value="Rehabilitation">Rehabilitation</option>
+                                                <option value="Stroke Treatmen">Stroke Treatment</option>
+                                                <option value="Posture Correction">Posture Correction</option>
+                                                <option value="Workout Training">Workout Training</option>
+                                                <option value="Frozen Shoulder">Frozen Shoulder</option>
+                                                <option value="Tennis Elbow">Tennis Elbow</option>
+                                                <option value="Golfer Elbow">Golfer Elbow</option>
+                                                <option value="ACL Rehab">ACL Rehab</option>
+                                                <option value="Ankylosing Spondylitis">Ankylosing Spondylitis</option>
+                                                <option value="Cupping/ Hijama / Therapy">Cupping/ Hijama / Therapy</option>
+                                                <option value="Arthritis OA/RA">Arthritis OA/RA</option>
+                                                <option value="Dry Needling">Dry Needling</option>
+                                                <option value="MFR-IASTM">MFR-IASTM</option>
+                                                <option value="Back Pain">Back Pain</option>
+                                                <option value="Neck Pain">Neck Pain</option>
+                                                <option value="Knee Pain">Knee Pain</option>
+                                                <option value="Heel Pain">Heel Pain</option>
+                                                <option value="Accupressure">Accupressure</option>
+                                                <option value="Bell's / Facial Palsy">Bell's / Facial Palsy</option>
+                                                <option value="Sciatica Treatment">Sciatica Treatment</option>
+                                                <option value="Paralysis Treatment">Paralysis Treatment</option>
+                                                <option value="Any Other">Any Other</option>
                                             </select>
                                             <select id='doctor' name='doctor' value={formData.doctor} onChange={handleInputChange} className=' text-xl border-solid border-gray-700 border-2 rounded-3xl px-8 py-3 text-gray-500 outline-none' required>
                                                 <option value="">Select Physiotherapists</option>
-                                                <option value="mritunjay">Mr. Mritunjay Kumar</option>
-                                                <option value="shaiban">Mr. Shaiban Ahmed Khan</option>
-                                                <option value="sonal">Ms. Sonal</option>
+                                                <option value="Mr. Mritunjay Kumar">Mr. Mritunjay Kumar</option>
+                                                <option value="Mr. Shaiban Ahmed Khan">Mr. Shaiban Ahmed Khan</option>
+                                                <option value="Ms. Sonal">Ms. Sonal</option>
                                             </select>
                                         </div>
                                         <div className=" flex flex-row gap-x-16 items-center">
